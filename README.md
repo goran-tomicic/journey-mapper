@@ -9,6 +9,7 @@ See `docs/SPEC.md` for scope and `CLAUDE.md` for build instructions.
 1. `cp .env.example .env` and fill in your Anthropic API key
 2. `npm install`
 3. `npm run extract` — reads every transcript in `data/transcripts/`, extracts a journey per transcript, merges them into one journey map, and writes `data/output/journey.json`
+   - Optionally pass a short description of the journey being investigated to steer extraction: `npm run extract -- "onboarding a new B2B SaaS user"`
 4. `npm run render` — reads `data/output/journey.json` and writes `data/output/journey.html`, a horizontal step map color-coded by emotion
 
 Open `data/output/journey.html` in a browser to view the result.
@@ -26,12 +27,12 @@ Each step in `data/output/journey.json`:
 ```jsonc
 {
   "step": "Team invite and role/permission assignment",
-  "emotion": "frustrated",       // "frustrated" | "neutral" | "delighted"
-  "quote": "...",                 // verbatim, from one source transcript
-  "pain_point": "...",            // empty string if none
-  "opportunity": "...",           // empty string if none
-  "sources": ["transcript-1"],    // transcript ids this step draws from
-  "disagreement": null            // note describing conflicting sources, or null
+  "emotion": "frustrated", // "frustrated" | "neutral" | "delighted"
+  "quote": "...", // verbatim, from one source transcript
+  "pain_point": "...", // empty string if none
+  "opportunity": "...", // empty string if none
+  "sources": ["transcript-1"], // transcript ids this step draws from
+  "disagreement": null, // note describing conflicting sources, or null
 }
 ```
 

@@ -5,6 +5,9 @@ Release log for journey-mapper. One entry per feature branch, added when it merg
 ## [Unreleased]
 
 ### Added
+- Optional journey-context argument: `npm run extract -- "<description>"` passes a short description of the journey being investigated into the extraction prompt, matching the spec's optional input.
+
+### Added
 - Visual journey map: `npm run render` reads `data/output/journey.json` and generates a static, self-contained `data/output/journey.html` — a horizontal step map with emotion color-coding (frustrated/neutral/delighted), quotes, pain points, opportunities, and source/disagreement notes per step.
 
 ### Added
