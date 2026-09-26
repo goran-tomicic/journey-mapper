@@ -1,0 +1,12 @@
+Interview subject: Priya, Operations Lead at a mid-size logistics company
+Topic: Onboarding onto a new B2B SaaS platform
+
+We signed up after a demo call, and honestly the first login was rough. Nobody told us we needed to pre-configure our user roles before inviting the rest of the team, so I invited twelve people and half of them landed on a blank dashboard with no permissions. That was frustrating — I remember thinking "did we just buy the wrong tool?"
+
+Once support pointed me to the roles page, setup itself was actually pretty painless. The step-by-step wizard for connecting our existing data source worked first try, which was a relief after the rocky start.
+
+The part that really won me over was the first time I saw our shipment data populate the dashboard automatically. I actually said out loud, "oh, that's slick" — my team was impressed too. It felt like the tool finally showed its value.
+
+Where it fell apart again was integrating with our accounting software. The docs referenced an API version that didn't match what was actually live, so I burned almost a full day going back and forth with support before we got it working. I was pretty annoyed by that point, like, how is this not in the setup wizard?
+
+By the end of the first month we were fully running on it and honestly happy, but that first week nearly made us churn.

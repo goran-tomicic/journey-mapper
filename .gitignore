@@ -14,6 +14,7 @@ __pycache__/
 dist/
 build/
 out/
+data/output/
 *.log
 npm-debug.log*
 yarn-debug.log*
