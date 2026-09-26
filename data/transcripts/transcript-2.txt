@@ -1,0 +1,12 @@
+Interview subject: Marcus, IT Manager at a regional retail chain
+Topic: Onboarding onto a new B2B SaaS platform
+
+Signing the contract and getting our account provisioned was smooth — the sales rep actually stayed on to help with the first login, so no complaints there. Neutral experience, nothing memorable either way.
+
+Inviting the team was where things got messy. Same as I've heard from other companies, the invite flow doesn't let you assign roles up front, so a bunch of our invited users got dropped into the workspace with zero permissions. One of my analysts messaged me "am I supposed to be able to see anything?" I was frustrated because I'd assumed role assignment was part of the invite step.
+
+Connecting our data source was fine, maybe a little slow, but it worked without hand-holding. Nothing to complain about.
+
+The accounting integration was the worst part of the whole process. We hit an API mismatch error that support eventually explained was a documentation issue, not something on our end. That cost us real time and I was frustrated — we almost escalated to our account manager to ask for a refund on the first invoice.
+
+Once we were past that, the automated dashboard reporting was genuinely delightful. Our finance team started using it daily within the second week, unprompted, which told me it had actually landed.
