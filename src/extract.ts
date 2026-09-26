@@ -16,11 +16,18 @@ For each distinct step in the journey the interviewee describes, extract:
 
 Keep steps in the order they occurred in the journey, not the order mentioned in the transcript, when the two differ.`;
 
-export async function extractJourney(transcript: TranscriptSource): Promise<Extraction> {
+export async function extractJourney(
+  transcript: TranscriptSource,
+  journeyContext?: string,
+): Promise<Extraction> {
+  const system = journeyContext
+    ? `${SYSTEM_PROMPT}\n\nThe journey being investigated: ${journeyContext}`
+    : SYSTEM_PROMPT;
+
   const response = await client.messages.parse({
     model: MODEL,
     max_tokens: 4096,
-    system: SYSTEM_PROMPT,
+    system,
     messages: [{ role: "user", content: transcript.text }],
     output_config: {
       format: zodOutputFormat(ExtractionSchema),

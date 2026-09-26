@@ -22,16 +22,21 @@ async function loadTranscripts(): Promise<TranscriptSource[]> {
 }
 
 async function main() {
+  const journeyContext = process.argv.slice(2).join(" ").trim() || undefined;
+
   const transcripts = await loadTranscripts();
   if (transcripts.length === 0) {
     throw new Error(`No transcripts found in ${TRANSCRIPTS_DIR}`);
   }
 
   console.log(`Extracting from ${transcripts.length} transcript(s)...`);
+  if (journeyContext) {
+    console.log(`Journey context: ${journeyContext}`);
+  }
   const extractions: Record<string, Extraction> = {};
   for (const transcript of transcripts) {
     console.log(`  - ${transcript.id}`);
-    extractions[transcript.id] = await extractJourney(transcript);
+    extractions[transcript.id] = await extractJourney(transcript, journeyContext);
   }
 
   console.log("Merging into a single journey map...");
